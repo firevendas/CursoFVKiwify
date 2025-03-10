@@ -151,12 +151,18 @@
       flex-direction: column !important;
     }	
 }
+	  
 @media (max-width: 768px) {
   #videoteste {
-    width: 2560px;  /* Largura do vídeo */
-    height: 1920px; /* Altura do vídeo */
+	display:none;
   }
 }
+
+  @media (min-width: 769px) {
+    .mobile-video {
+      display: none;
+    }
+  }
 
   </style>
 </head>
@@ -397,6 +403,18 @@
 
 	  </div>
       </section>
+
+	<section>
+          <div class="container" style=" display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+		<iframe class="mobile-video" width="100%" height="500" 
+		        src="https://www.youtube.com/embed/Ku9WTM8pbqQ?autoplay=1&loop=1&playlist=Ku9WTM8pbqQ" 
+		        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+		</iframe>
+	  </div>
+      </section>
+
+	    
 
         <section>
           <div class="container">
