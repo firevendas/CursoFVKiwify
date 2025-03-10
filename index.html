@@ -388,7 +388,7 @@
 
 	<section>
           <div class="container" style=" display: flex; align-items: center; justify-content: center; margin-bottom: 20px">
-		<iframe src="https://drive.google.com/file/d/1NWYjGfvF_tVU0MCDhjAWGq7CcgXqLIUx/preview" width="960" height="720" allow="autoplay"></iframe>
+		<iframe width="960" height="720" src="https://www.youtube.com/embed/Ev10hKTsK2s?autoplay=1&loop=1&playlist=Ev10hKTsK2s&si=OBF5TszPn-dyyqQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
       </section>
 
@@ -698,13 +698,7 @@
 
     </main>
 
-<script>
-  document.getElementById("videoIframe").onload = function() {
-    var iframe = document.getElementById("videoIframe");
-    iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-    iframe.contentWindow.postMessage('{"event":"command","func":"setLoop","args":[true]}', '*');
-  };
-</script>
+
   <script>
 
     function playVideo() {
